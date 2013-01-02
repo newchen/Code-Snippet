@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript" src="typeof.js"></script>
+	<script type="text/javascript">
+	//测试
+        console.log(typeOf(123))//number 
+        console.log(typeOf(new Number(345)))//number
+
+        console.log(typeOf("123"))//string
+        console.log(typeOf(new String("qwe")))//string
+
+        console.log(typeOf(false))//boolean
+
+        console.log(typeOf(new Object()))//object
+        console.log(typeOf({a:"12",b:"we"}))//object
+
+        console.log(typeOf(new Date()))//date
+
+        console.log(typeOf([1,2,3]))//array
+        console.log(typeOf(new Array(5)))//array
+        
+        console.log(typeOf(function(){}))//function
+
+        console.log(typeOf(/123/))//regexp
+        console.log(typeOf(new RegExp("123")))//regexp
+
+        console.log(typeOf(null))//null
+        console.log(typeOf(undefined))//undefined
+
+        console.log(typeOf(document.body));//element
+
+	</script>
+</body>
+</html>
